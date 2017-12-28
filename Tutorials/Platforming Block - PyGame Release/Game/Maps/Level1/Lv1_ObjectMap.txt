@@ -1,0 +1,9 @@
+#The object map allows us to place objects into the world. We create the objects in code and add them to an array.
+#The objects are then pulled from the array and placed according to this map.
+#A zero will not place any object.
+0000000000000000000000
+00                   0
+00                   0
+00               0   0
+00              000 00
+0000000000000000000000
