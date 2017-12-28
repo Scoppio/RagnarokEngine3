@@ -1,7 +1,7 @@
-# Tutorial 3 - Creating new Entities
+Tutorial 3 - Creating new Entities
 ---
 
-Based on the post from the original author, found on the Web Archive (enlightened be the archivists and bibliotecarians)
+Based on the post from the original author, found on the Web Archive
 
 ## How to
 

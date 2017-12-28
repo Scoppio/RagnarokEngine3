@@ -1,7 +1,7 @@
-# Tutorial 2 - Adding Sprites
+Tutorial 2 - Adding Sprites
 ---
 
-Based on the post from the original author, found on the Web Archive (enlightened be the archivists and bibliotecarians)
+Based on the post from the original author, found on the Web Archive
 
 ## The Sprite
 

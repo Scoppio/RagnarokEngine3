@@ -1,4 +1,4 @@
-# Ragnarok Engine
+# Ragnarok Engine 3
 
 ![Ragnarok Engine](Ragnarok.jpg)
 
@@ -44,7 +44,7 @@ This code is being expanded and ported to python 3.6
 
 ## Features
 
-Many basic classes and methods are already inplace for Ragnarok Engine
+Many basic classes and methods are already inplace for Ragnarok Engine3
 - 2D and 3D Vector Math Library
 - Sprites with easy rotation, scaling, texture loading, etc.
 - SpriteSheet and Animation classes

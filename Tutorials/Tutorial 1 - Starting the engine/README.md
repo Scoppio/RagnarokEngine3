@@ -1,7 +1,7 @@
-# Tutorial 1 - Getting Started
+Tutorial 1 - Getting Started
 ---
 
-Based on the post from the original author, found on the Web Archive (enlightened be the archivists and bibliotecarians)
+Based on the post from the original author, found on the Web Archive
 
 ## The Basics
 
