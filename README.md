@@ -40,6 +40,8 @@ By the way, the original game made by Clinton Myers was downloaded from Mediafir
 tutorial folder so you can see how the engine can be applied on a real working game. The game itself was made to run on 
 Python2, so it will require a specific installation, but you can follow the instructions on the game. 
 
+This code is being expanded and ported to python 3.6
+
 ## Features
 
 Many basic classes and methods are already inplace for Ragnarok Engine
