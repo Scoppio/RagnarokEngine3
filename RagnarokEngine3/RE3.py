@@ -15,7 +15,7 @@ You should have received a copy of the GNU Lesser General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/lgpl.html>.
 """
 
-__version__ = "1.0.0a9"
+__version__ = "1.0.0a10"
 __author__ = "Lucas Scoppio"
 __date__ = "28 december 2017"
 
