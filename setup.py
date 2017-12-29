@@ -63,7 +63,7 @@ setup(
       keywords='pygame python3 engine game',
       author='Lucas Scoppio',
       author_email='lucascoppio@gmail.com',
-      url='https://github.com/Scoppio/Ragnarok-Engine3',
+      url='https://github.com/Scoppio/RagnarokEngine3',
       license='LGPL 3',
       packages=['RagnarokEngine3'],
       long_description=description,
