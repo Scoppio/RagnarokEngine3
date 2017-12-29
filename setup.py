@@ -49,7 +49,7 @@ To verify if it is working properly you may simply create a minimum project.
 
 setup(
       name='RagnarokEngine3',
-      version='1.0.0a10',
+      version='1.0.0a11',
       description='Simple and easy 2D game engine for pygame applications',
       classifiers=[
             'Development Status :: 3 - Alpha',
