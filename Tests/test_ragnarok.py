@@ -1,4 +1,4 @@
-from RagnarokEngine3.RE3 import Vector2, Vector3
+from RagnarokEngine3.RE3 import Vector2, Vector3, Vector4
 
 
 def test_vector2():
@@ -15,3 +15,11 @@ def test_vector3():
     assert (vector3 / 2) == Vector3(5, 1, 0.5)
     assert (vector3 + Vector3(5, 1, 0.5)) == Vector3(15, 3, 1.5)
     assert (vector3 - Vector3(5, 1, 0.5)) == Vector3(5, 1, 0.5)
+
+
+def test_vector4():
+    vector4 = Vector4(10, 2, 1, 0)
+    assert (vector4 * 2) == Vector4(20, 4, 2, 0)
+    assert (vector4 / 2) == Vector4(5, 1, 0.5, 0)
+    assert (vector4 + Vector4(5, 1, 0.5, 0)) == Vector4(15, 3, 1.5, 0)
+    assert (vector4 - Vector4(5, 1, 0.5, 0)) == Vector4(5, 1, 0.5, 0)
