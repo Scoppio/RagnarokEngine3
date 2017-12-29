@@ -1,11 +1,11 @@
-import Ragnarok as R
+from RagnarokEngine3.RE3 import Vector2, Ragnarok, Sprite
 
-engine = R.Ragnarok(R.Vector2(640, 480), "RAGNAROK TUTORIAL 1")
+engine = Ragnarok(Vector2(640, 480), "RAGNAROK TUTORIAL 1")
 
 world = engine.get_world()
 world.clear_color = (255, 255, 255)
 
-sprite = R.Sprite()
+sprite = Sprite()
 
 sprite.update_order = 0
 sprite.draw_order = 0

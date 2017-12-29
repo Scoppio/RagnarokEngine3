@@ -13,7 +13,7 @@ A Sprite is essentially a container object for an image that allows us to manipu
 Let’s start by creating the object.
 
 ```
-    sprite = R.Sprite()
+    sprite = RE3.Sprite()
 ```
 
 ## The Properties

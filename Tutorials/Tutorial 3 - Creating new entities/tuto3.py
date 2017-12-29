@@ -1,4 +1,4 @@
-import Ragnarok as R
+from RagnarokEngine3 import RE3 as R
 import pygame
 import random
 import os

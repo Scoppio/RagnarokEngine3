@@ -12,14 +12,9 @@ Here you will see how to import the engine and start a clean world.
 The first step is to import our Ragnarok engine for use. If you installed it you simply have to do
 
 ```
-    import Ragnarok as R
+    from RagnarokEngine3 import RE3
 ```
 
-If instead you have the engine in your root directory of your project then you use
-
-```
-    from . import Ragnarok as R
-```
 
 ## Initializing
 
@@ -27,7 +22,7 @@ Now to initialize the engine we must run one single line, which tells our system
 are going to play the game, and what is the name of it.
 
 ```
-    engine = R.Ragnarok(R.Vector2(640, 480), "RAGNAROK TUTORIAL 1")
+    engine = RE3.Ragnarok(RE3.Vector2(640, 480), "RAGNAROK TUTORIAL 1")
 ```
 
 We are telling Ragnarok that we want to create a window of size 640 by 480,

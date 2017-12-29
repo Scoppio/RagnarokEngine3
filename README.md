@@ -59,8 +59,15 @@ Many basic classes and methods are already inplace for Ragnarok Engine3
 
 ## Install
 
-This module depends only on pygame 1.9.3 and python 3.6, you just need to have it in the root of your package for it
-to work properly.
+You may install it from source using:
+
+    pip install setup.py
+
+or install from pypi
+
+    pip install RagnarokEngine3
+
+
 
 ## Usage
 
@@ -68,9 +75,9 @@ Quite simple, you should look the tutorials for more information, but to verify 
 simply create a minimum project.
 
 ```
-import Ragnarok as R
+from RagnarokEngine3.RE3 import Ragnarok, Vector2
 
-engine = R.Ragnarok(R.Vector2(640, 480), "RAGNAROK WHITE SCREEN")
+engine = Ragnarok(Vector2(640, 480), "RAGNAROK WHITE SCREEN")
 
 world = engine.get_world()
 world.clear_color = (255, 255, 255)
@@ -305,4 +312,4 @@ Small note: If editing the Readme, please conform to the [standard-readme](https
 
 ## License
 
-[LGPL3 © Clinton Myers.](LICENSE.md)
+[LGPL3 © Clinton Myers.](LICENSE.txt)

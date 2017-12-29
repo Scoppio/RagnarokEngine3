@@ -1,6 +1,6 @@
 """
-Ragnarok Engine
-Modified and adapted to Python 3.6+ by Lucas Scoppio @ 2017
+Ragnarok Engine 3
+Modified and adapted Ragnarok Engine to Python 3.6+ by Lucas Scoppio @ 2017
 Copyright 2010 Clinton Myers
 
 This library is free software: you can redistribute it and/or modify
@@ -13,29 +13,37 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/lgpl.html>.
-
-Ragnarok Version 1.0p36
-
-Developer Note: This is a very early version of a work in progress. Several of the classes
-have many segments commented out and may not function properly. If you have any questions, contact
-me at lotusxp@live.com
 """
 
-import pygame
+__version__ = "1.0.0a9"
+__author__ = "Lucas Scoppio"
+__date__ = "28 december 2017"
+
+__credits__ = """Guido van Rossum, for an excellent programming language.
+Clinton Myers, the original creator of Ragnarok Engine.
+Giovanna Coppi for her patience and love
+"""
+
 import math
 import numbers
 import operator
 import random
-import StateTypes
-from functools import cmp_to_key
 import os
+
+from functools import cmp_to_key
+
+import pygame
 
 os.environ['SDL_VIDEO_WINDOW_POS'] = 'center'
 
-__version__ = "1.0.p36"
-__authors__ = ["Clinton Myers",
-               "Lucas Coppio"]
+#These represet mouse states we can query.
+M_LEFT = 0
+M_MIDDLE = 1
+M_RIGHT = 2
 
+#Represents the Keyboard and Mouse enums
+KEYBOARD = 0
+MOUSE = 1
 
 class Vector2(object):
     def __init__(self, X=0.0, Y=0.0):
@@ -1025,7 +1033,7 @@ class Ragnarok(object):
         window_name is the text that displays on the top-left of the pygame window.
         """
 
-        print('Booting Ragnarok')
+        print('Booting Ragnarok', __version__)
 
         if icon_path:
             pygame.display.set_icon(pygame.image.load(icon_path))
@@ -2268,7 +2276,7 @@ class GUIMenu(DrawableObj):
     def __init__(self):
         super(GUIMenu, self).__init__()
         # The type of input we are currently acceopting. We can only accept one type of input at a time.
-        self.input_focus = StateTypes.KEYBOARD
+        self.input_focus = KEYBOARD
 
         # The keyboard button that selects the button above the currently selected button.
         self.move_up_button = pygame.K_UP
@@ -2280,7 +2288,7 @@ class GUIMenu(DrawableObj):
         self.select_button = pygame.K_RETURN
 
         # The mouse button we will query for clicked events.
-        self.mouse_select_button = StateTypes.M_LEFT
+        self.mouse_select_button = M_LEFT
 
         # The index of the currently selected button.
         self.current_index = -1
@@ -2295,7 +2303,7 @@ class GUIMenu(DrawableObj):
         move_down is from the pygame.KEYS enum that defines what button causes the menu selection to move down.
         select is from the pygame.KEYS enum that defines what button causes the button to be selected.
         """
-        self.input_focus = StateTypes.KEYBOARD
+        self.input_focus = KEYBOARD
         self.move_up_button = move_up
         self.move_down_button = move_down
         self.select_button = select
@@ -2304,7 +2312,7 @@ class GUIMenu(DrawableObj):
         """
         Set the mouse as the object that controls the menu.
         """
-        self.input_focus = StateTypes.MOUSE
+        self.input_focus = MOUSE
 
     def __wrap_index(self):
         """Wraps the current_index to the other side of the menu."""
@@ -2385,9 +2393,9 @@ class GUIMenu(DrawableObj):
             self.gui_buttons[self.current_index].roll_over_action()
 
         # Call the correct update method depending on what the user has the focus currently set as.
-        if self.input_focus == StateTypes.KEYBOARD:
+        if self.input_focus == KEYBOARD:
             self.__update_keyboard(milliseconds)
-        elif self.input_focus == StateTypes.MOUSE:
+        elif self.input_focus == MOUSE:
             self.__update_mouse(milliseconds)
 
         super(GUIMenu, self).update(milliseconds)
@@ -2428,13 +2436,13 @@ class MouseState(object):
         Is a button depressed?
         True if a button is pressed, false otherwise.
         """
-        if StateType == StateTypes.M_LEFT:
+        if StateType == M_LEFT:
             # Checking left mouse button
             return self.left_pressed
-        elif StateType == StateTypes.M_MIDDLE:
+        elif StateType == M_MIDDLE:
             # Checking middle mouse button
             return self.middle_pressed
-        elif StateType == StateTypes.M_RIGHT:
+        elif StateType == M_RIGHT:
             # Checking right mouse button
             return self.right_pressed
 
