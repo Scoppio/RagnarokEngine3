@@ -11,7 +11,7 @@ The engine is built in such a way that it attempts to be used under any scenario
 It is easy to set up, maintain, and extend for your particular needs.
 This code is being expanded and ported to python 3.6
 
-## Features
+ Features
 
 Many basic classes and methods are already inplace for Ragnarok Engine3
 - 2D and 3D Vector Math Library
@@ -26,13 +26,13 @@ Many basic classes and methods are already inplace for Ragnarok Engine3
 - Pool class for efficiently reusing objects
 - TileMaps
 
-## How to install
+ How to install
 
 To install, download the distribution, unpackage it and inside the folder you run.
 
     pip install .
 
-## How to use
+ How to use
 
 You should look the tutorials for more information at the github of the project,
 To verify if it is working properly you may simply create a minimum project.

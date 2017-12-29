@@ -9,7 +9,7 @@ Fork, then clone the repo:
 
 Set up your machine:
 
-    pip3 install pygame
+    pip install pygame
 
 Make sure the tests pass:
 
